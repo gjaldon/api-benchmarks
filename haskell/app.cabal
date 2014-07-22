@@ -1,0 +1,37 @@
+name:                app
+version:             0.0.0.1
+synopsis:            API Benchmark
+description:         API Benchmark
+license:             BSD3
+license-file:        LICENSE
+author:              Daisuke Fujimura
+maintainer:          daisuke@quipper.com
+copyright:           (c) 2014 Quipper, Ltd.
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.8
+
+Executable app
+  main-is:
+      Main.hs
+  ghc-options:
+      -Wall -threaded -O2 -rtsopts
+  build-depends:
+      base >= 4.0 && < 5.0
+    , scotty >= 0.7.0
+    , aeson == 0.6.2.1
+    , AesonBson >= 0.2.1
+    , bson
+    , mongoDB >= 2.0.2
+    , bytestring
+    , conduit
+    , data-default
+    , text
+    , path-pieces
+    , http-types
+    , unordered-containers
+    , mtl
+    , network
+    , wai >= 2.0.0
+    , wai-extra >= 2.0.0
+    , warp
