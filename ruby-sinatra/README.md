@@ -1,4 +1,4 @@
-# Quipper API benchmark Go version
+# Quipper API benchmark Ruby + Sinatra version
 
 # How to run
 
