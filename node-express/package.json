@@ -1,0 +1,9 @@
+{
+  "name": "node-express",
+  "version": "0.1.0",
+  "description": "",
+  "dependencies": {
+    "express": "^4.6.1",
+    "mongodb": "^1.4.7"
+  }
+}
