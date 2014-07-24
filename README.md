@@ -21,3 +21,8 @@ $ rake
 ```
 $ ab -c 100 -n 10000 http://localhost:3000/ping
 ```
+
+## License
+
+Copyright (C) 2014 Quipper, Ltd.
+Licensed under the [MIT License](http://opensource.org/licenses/MIT)
