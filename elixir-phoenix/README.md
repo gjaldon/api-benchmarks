@@ -1,13 +1,17 @@
-# ElixirPhoenix
+# Installing Elixir
+```
+$ brew install elixir
+```
+If you are not on Mac OSX, you can find instructions for your OS here:
+http://elixir-lang.org/getting_started/1.html#1.1-installers
 
-To start your new Phoenix application you have to:
+You'll also need Erlang! http://elixir-lang.org/getting_started/1.html#1.5-installing-erlang
 
-1. Install dependencies with `mix deps.get`
-2. Start Phoenix router with `mix phoenix.start`
+# Starting the App
+```
+$ mix do deps.get, compile
+$ ./run.sh
+```
 
-Now you can visit `localhost:4000` from your browser.
-
-
-## Notes
-
-* If you choose to change the application's structure, you could manually start the router from your code like this `ElixirPhoenix.Router.start`
+# Notes
+In my benchmarks using AB, I get ~4k requests/sec.
