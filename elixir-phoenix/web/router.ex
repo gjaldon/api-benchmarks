@@ -2,5 +2,9 @@ defmodule ElixirPhoenix.Router do
   use Phoenix.Router
 
   plug Plug.Static, at: "/static", from: :elixir_phoenix
-  get "/", ElixirPhoenix.PageController, :index, as: :page
+
+  scope alias: ElixirPhoenix do
+    get "/",      PageController, :index, as: :page
+    get "/ping",  PingController, :index
+  end
 end
