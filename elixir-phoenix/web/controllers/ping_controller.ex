@@ -6,7 +6,8 @@ defmodule ElixirPhoenix.PingController do
     {student} = :mongo.find_one(connection, "users", {:username, "student1"})
     username = [username: elem(student, 7)]
 
-    conn |> assign_layout(:none)
+    conn |> put_resp_content_type("application/json")
+         |> assign_layout(:none)
          |> render "index", student: username
   end
 end
