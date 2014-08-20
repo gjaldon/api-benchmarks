@@ -26,8 +26,7 @@ defmodule ElixirPhoenix.Mixfile do
     [
       {:phoenix, github: "phoenixframework/phoenix"},
       {:cowboy, "~> 1.0.0"},
-      {:mongodb, github: "comtihon/mongodb-erlang"},
-      {:json,   "~> 0.3.0"}
+      {:mongodb, github: "comtihon/mongodb-erlang"}
     ]
   end
 end
